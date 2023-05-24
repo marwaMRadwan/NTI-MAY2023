@@ -23,14 +23,15 @@ function arrayTotal (arr) {
 
 function getStudentSAndF( arr, fullMark ){
     let s=0, f=0
-    arr.forEach( a => {
-        if(a>=fullMark/2)  s++
-        else f++
+    arr.forEach( function(a) {  // for(i=0; i< arr.length; i++)
+        if(a>=fullMark/2)  s++   // if(arr[i]> = fullmark/2) s++
+        else f++ 
     })
+    //s =4  f= 3
     let result = {
         success : s,
         fail: f
-    }
+    }   //{ success: 4, fail:3}
     return result
 }
 
