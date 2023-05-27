@@ -1,0 +1,8 @@
+git init  // new
+git add .
+git commit -m "message"
+git add remote origin link //new
+git push origin master
+
+
+git bash
